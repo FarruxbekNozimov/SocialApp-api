@@ -69,7 +69,7 @@ let startApp = () => {
 		},
 		() => console.log("Connect to MongoDB")
 	);
-	const PORT = process.env.PORT;
+	const PORT = process.env.PORT || 7770;
 	app.listen(PORT, () => {
 		console.log("Backend is running", PORT);
 	});
