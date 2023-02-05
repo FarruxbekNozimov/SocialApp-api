@@ -90,6 +90,7 @@ router.get("/profile/:username", async (req, res) => {
 
 // -- GET POSTS
 router.get("/postsAll", async (req, res) => {
+	console.log("salom");
 	try {
 		const post = await Post.find();
 		res.status(200).json(post);
